@@ -2,6 +2,9 @@
 
 **Copy, edit and share text without duplicating its storage.**
 
+[![Latest Version](https://img.shields.io/crates/v/text-ref.svg)](https://crates.io/crates/text-ref)
+[![Released API docs](https://docs.rs/text-ref/badge.svg)](https://docs.rs/text-ref)
+
 **English** | [简体中文](README_cn.md)
 
 `text-ref` is a small, dependency-free Rust crate built around two types:
@@ -49,15 +52,16 @@ is the last owner.
 
 ## Installation
 
-The crate is not published on crates.io yet. Add it from Git or as a path
-dependency:
+Add the crate from crates.io:
 
 ```toml
 [dependencies]
-# From Git
-text-ref = { git = "https://github.com/afpro/text-ref" }
+text-ref = "0.1"
 
-# Or from a local checkout
+# Or track the development version:
+# text-ref = { git = "https://github.com/afpro/text-ref" }
+
+# Or use a local checkout:
 # text-ref = { path = "../text-ref" }
 ```
 

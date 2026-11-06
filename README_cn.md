@@ -2,6 +2,9 @@
 
 **在不重复存储的前提下复制、编辑与共享文本。**
 
+[![最新版本](https://img.shields.io/crates/v/text-ref.svg)](https://crates.io/crates/text-ref)
+[![文档](https://docs.rs/text-ref/badge.svg)](https://docs.rs/text-ref)
+
 [English](README.md) | **简体中文**
 
 `text-ref` 是一个零依赖的小型 Rust 库，围绕两个类型构建：
@@ -45,14 +48,16 @@ O(1)；真正需要编辑时，再把快照转回独占的 `TextMut`：如果自
 
 ## 安装
 
-本库尚未发布到 crates.io。可以通过 Git 或本地路径引入：
+从 crates.io 添加：
 
 ```toml
 [dependencies]
-# 来自 Git
-text-ref = { git = "https://github.com/afpro/text-ref" }
+text-ref = "0.1"
 
-# 或使用本地检出
+# 或跟踪开发版本：
+# text-ref = { git = "https://github.com/afpro/text-ref" }
+
+# 或使用本地检出：
 # text-ref = { path = "../text-ref" }
 ```
 
